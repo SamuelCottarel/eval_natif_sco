@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input in uppercase</title>
+  </head>
+  <body>
+    <input type="text" id="input" />
+    <p id="uppercase"></p>
+  </body>
+  <script>
+    const input = document.getElementById("input");
+    const uppercase = document.getElementById("uppercase");
+    input.addEventListener("input", () => {
+      uppercase.innerHTML = input.value.toUpperCase();
+    });
+  </script>
+</html>

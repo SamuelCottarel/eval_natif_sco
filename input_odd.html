@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input odd</title>
+  </head>
+  <body>
+    <input id="number" type="number" />
+    <p id="odd"></p>
+  </body>
+  <script>
+    const number = document.getElementById("number");
+    const odd = document.getElementById("odd");
+    number.addEventListener("input", () => {
+      if (number.value % 2 === 0) {
+        odd.innerHTML = "Pair";
+      } else {
+        odd.innerHTML = "Impair";
+      }
+    });
+  </script>
+</html>
